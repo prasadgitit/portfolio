@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Projects & Roles</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+</head>
+<style>
+    .circle {
+        padding: 13px 20px;
+        border-radius: 50%;
+        background-color: #ED8D8D;
+        color: #fff;
+        max-height: 50px;
+        z-index: 2;
+    }
+
+    .how-it-works.row .col-2 {
+        align-self: stretch;
+    }
+
+    .how-it-works.row .col-2::after {
+        content: "";
+        position: absolute;
+        border-left: 3px solid #ED8D8D;
+        z-index: 1;
+    }
+
+    .how-it-works.row .col-2.bottom::after {
+        height: 50%;
+        left: 50%;
+        top: 50%;
+    }
+
+    .how-it-works.row .col-2.full::after {
+        height: 100%;
+        left: calc(50% - 3px);
+    }
+
+    .how-it-works.row .col-2.top::after {
+        height: 50%;
+        left: 50%;
+        top: 0;
+    }
+
+
+    .timeline div {
+        padding: 0;
+        height: 40px;
+    }
+
+    .timeline hr {
+        border-top: 3px solid #ED8D8D;
+        margin: 0;
+        top: 17px;
+        position: relative;
+    }
+
+    .timeline .col-2 {
+        display: flex;
+        overflow: hidden;
+    }
+
+    .timeline .corner {
+        border: 3px solid #ED8D8D;
+        width: 100%;
+        position: relative;
+        border-radius: 15px;
+    }
+
+    .timeline .top-right {
+        left: 50%;
+        top: -50%;
+    }
+
+    .timeline .left-bottom {
+        left: -50%;
+        top: calc(50% - 3px);
+    }
+
+    .timeline .top-left {
+        left: -50%;
+        top: -50%;
+    }
+
+    .timeline .right-bottom {
+        left: 50%;
+        top: calc(50% - 3px);
+    }
+</style>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!--The outer nav element with navbar as class creates the bar at the top of the page. A nav element is the same as a div except that we give a hint to seach engines that this is a navigation.-->
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <a class="navbar-brand" href="#">
+                    <img src="/logo.png" alt="..." height="65" width="65">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu">
+                    <span class="navbar-toggler-icon"></span>
+                    <!--The button element with the class navbar-toggler is the button on the mobile view to expand the menu. To test this make the browser window small.-->
+                </button>
+                <ul class="navbar-nav">
+                    <li><a class="nav-link" href="/" style="font-size: x-large;">Home</a></li>
+                    <li><a class="nav-link " href="/Blog/index.html" style="font-size: x-large;">Projects</a></li>
+                    <li><a class="nav-link" href="/Blog/Skills/index.html" style="font-size: x-large;">Skills</a></li>
+                    <li><a class="nav-link active" href="/Blog/Achievements/index.html"
+                            style="font-size: x-large;">Achievements</a></li>
+                </ul>
+            </div>
+            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="mailto:prasadpawaskar786@gmail.com">
+                            <img src="/email.png" title="Mail me" height="30" width="30">&nbsp;&nbsp;
+                        </a>
+                        <a href="www.linkedin.com/in/prasad-pawaskar-651512a9">
+                            <img src="/linkedin.png" title="Connect With Me" height="30" width="30">&nbsp;&nbsp;
+                        </a>
+                        <!--www.linkedin.com/in/prasad-pawaskar-651512a9-->
+
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <br>
+        <h2 class="text-center">Project and Responsibilities</h2>
+        <h5 class="text-center">Here's what I've Achieved</h5>
+        <br>
+        <div class="">
+            <div class="container">
+                <h2 class="pb-1 pt-2 border-bottom mb-5" style="font-size: large;"></h2>
+                <!--first section-->
+                <div class="row align-items-center how-it-works d-flex">
+                    <div class="col-2 text-center bottom d-inline-flex justify-content-center align-items-center">
+                        <div class="circle font-weight-bold">1</div>
+                    </div>
+                    <div class="col-6">
+                        <h5>Coforge Ltd. | Pat on the Back Award</h5>
+                        <p>Oct 2021 | Awarded to the Individuals outperforming in Think Customer Category.
+                            As part of Inspire Awards throughout the Insurance Vertical.
+                        </p>
+                    </div>
+                </div>
+                <!--path between 1-2-->
+                <div class="row timeline">
+                    <div class="col-2">
+                        <div class="corner top-right"></div>
+                    </div>
+                    <div class="col-8">
+                        <hr />
+                    </div>
+                    <div class="col-2">
+                        <div class="corner left-bottom"></div>
+                    </div>
+                </div>
+                <!--second section-->
+                <div class="row align-items-center justify-content-end how-it-works d-flex">
+                    <div class="col-6 text-right">
+                        <h5>Coforge Ltd. | Customer Excellance Award</h5>
+                        <p>Aug 2020 | Awarded for doing a lot of heavy lifting for Client for fixing, enhancing and moving the Image Right Integrtaion to production. 
+                            He has been diligently following up with onshore leads on making sure he gets all the inputs needed for development ahead of time. 
+                            He also raises risk and issues proactively. </p>
+                    </div>
+                    <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
+                        <div class="circle font-weight-bold">2</div>
+                    </div>
+                </div>
+                <!--path between 2-3-->
+                <div class="row timeline">
+                    <div class="col-2">
+                        <div class="corner right-bottom"></div>
+                    </div>
+                    <div class="col-8">
+                        <hr />
+                    </div>
+                    <div class="col-2">
+                        <div class="corner top-left"></div>
+                    </div>
+                </div>
+                <!--third section-->
+                <div class="row align-items-center how-it-works d-flex">
+                    <div class="col-2 text-center top d-inline-flex justify-content-center align-items-center">
+                        <div class="circle font-weight-bold">3</div>
+                    </div>
+                    <div class="col-6">
+                        <h5>Accenture Services Ltd. | Magic Cabinet Award</h5>
+                        <p>Oct 2019 | Awarded to Individuals performing the best for the client during monthly releases.</p>
+                    </div>
+
+                </div>
+                <!--3-4-->
+                <div class="row timeline">
+                    <div class="col-2">
+                        <div class="corner top-right"></div>
+                    </div>
+                    <div class="col-8">
+                        <hr />
+                    </div>
+                    <div class="col-2">
+                        <div class="corner left-bottom"></div>
+                    </div>
+                </div>
+                <div class="row align-items-center justify-content-end how-it-works d-flex">
+                    <div class="col-6 text-right">
+                        <h5>Accenture Services Ltd. | ACE Excellance Award</h5>
+                        <p>Nov 2016 | Awarded in Individual WizKid Category for performing the best as a fresher in overally Business Vertical.</p>
+                    </div>
+                    <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
+                        <div class="circle font-weight-bold">4</div>
+                    </div>
+                </div>
+                <!--end-->
+                <!--4 to 5-->
+                <!--path between 2-3-->
+                <div class="row timeline">
+                    <div class="col-2">
+                        <div class="corner right-bottom"></div>
+                    </div>
+                    <div class="col-8">
+                        <hr />
+                    </div>
+                    <div class="col-2">
+                        <div class="corner top-left"></div>
+                    </div>
+                </div>
+                <!--fifth section-->
+                <div class="row align-items-center how-it-works d-flex">
+                    <div class="col-2 text-center top d-inline-flex justify-content-center align-items-center">
+                        <div class="circle font-weight-bold">5</div>
+                    </div>
+                    <div class="col-6">
+                        <h5>VESIT , Mumbai University | 10th Rank</h5>
+                        <p>May 2015 | Secured 10th Rank in Electronics Department by clearing the Bachelor's in Electronics Engineering with 77% from Mumbai University.</p>
+                    </div>
+
+                </div>
+                <!--5 to 6-->
+                <div class="row timeline">
+                    <div class="col-2">
+                        <div class="corner top-right"></div>
+                    </div>
+                    <div class="col-8">
+                        <hr />
+                    </div>
+                    <div class="col-2">
+                        <div class="corner left-bottom"></div>
+                    </div>
+                </div>
+                <div class="row align-items-center justify-content-end how-it-works d-flex">
+                    <div class="col-6 text-right">
+                        <h5>Xavier's Technical Institute, Mumbai | 4th Rank</h5>
+                        <p>May 2012 | Secured 4th Rank in Electronics & Telecom Department by clearing the Diploma in Electronics & Telecom Engineering with 91%. </p>
+                    </div>
+                    <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
+                        <div class="circle font-weight-bold">6</div>
+                    </div>
+                </div>
+                <!--4 to 5-->
+                <!--path between 2-3-->
+                <div class="row timeline">
+                    <div class="col-2">
+                        <div class="corner right-bottom"></div>
+                    </div>
+                    <div class="col-8">
+                        <hr />
+                    </div>
+                    <div class="col-2">
+                        <div class="corner top-left"></div>
+                    </div>
+                </div>
+                <!--fifth section-->
+                <div class="row align-items-center how-it-works d-flex">
+                    <div class="col-2 text-center top d-inline-flex justify-content-center align-items-center">
+                        <div class="circle font-weight-bold">7</div>
+                    </div>
+                    <div class="col-6">
+                        <h5>St. Theresas's High School, Mumbai University | 1st Rank</h5>
+                        <p>May 2009 | Secured 1st Rank overall school level in SSC Maharashtra board exams with 91%.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <br>
+</body>
+
+</html>
