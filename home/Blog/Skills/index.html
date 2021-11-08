@@ -60,9 +60,7 @@
                 }
             });
         });
-        $('#button').click(function () {
-            $('#wrapper').toggle();
-        })
+        
     </script>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <!--The outer nav element with navbar as class creates the bar at the top of the page. A nav element is the same as a div except that we give a hint to seach engines that this is a navigation.-->
@@ -107,7 +105,7 @@
         <h2 class="text-center">Skills overview</h2>
         <h5 class="text-center">Here's what I know</h5>
         <br>
-        <div class="row" id="chart-container" style="position: relative; height:50vh; width:80vw; ">
+        <div  id="chart-container" style="position: relative; height:50vh; width:80vw; ">
             <canvas id="doughnutChart"></canvas>
         </div>
         <br>
@@ -123,6 +121,7 @@
                         <th scope="col">Skill Name</th>
                         <th scope="col">Category</th>
                         <th scope="col">Level</th>
+                        <th scope="col">Experience(months)</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -131,48 +130,56 @@
                         <td>Duck Creek Claims</td>
                         <td>Duck Creek Stack</td>
                         <td>Proficient</td>
+                        <td>66</td>
                     </tr>
                     <tr>
                         <td>2</td>
                         <td>ASP.NET</td>
                         <td>.NET Framework</td>
                         <td>Intermediate</td>
+                        <td>48</td>
                     </tr>
                     <tr>
                         <td>3</td>
                         <td>C# and Web API</td>
                         <td>.NET Framework</td>
                         <td>Intermediate</td>
+                        <td>48</td>
                     </tr>
                     <tr>
                         <td>4</td>
                         <td>SQL Server</td>
                         <td>Back End DataBase</td>
                         <td>Intermediate</td>
+                        <td>48</td>
                     </tr>
                     <tr>
                         <td>5</td>
                         <td>HTML/CSS/JavaScript</td>
                         <td>Front End Stack</td>
                         <td>Begineer</td>
+                        <td>22</td>
                     </tr>
                     <tr>
                         <td>6</td>
                         <td>Python</td>
                         <td>Coding</td>
                         <td>Begineer</td>
+                        <td>2</td>
                     </tr>
                     <tr>
                         <td>7</td>
                         <td>TFS / Azure GIT</td>
                         <td>Repository</td>
                         <td></td>
+                        <td>72</td>
                     </tr>
                     <tr>
                         <td>8</td>
                         <td>Waterfall / Agile</td>
                         <td>Methodologies</td>
                         <td></td>
+                        <td>72</td>
                     </tr>
                 </tbody>
             </table>
