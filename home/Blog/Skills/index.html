@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Skills</title>
+     <meta charset="UTF-8">
+    <link rel = "icon" href = "../../P.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+</head>
+
+<body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.1/Chart.js"></script>
+    <script>
+        jQuery(document).ready(function () {
+            var doughnutChart = document.getElementById('doughnutChart').getContext('2d');
+
+            var myDoughnutChart = new Chart(doughnutChart, {
+                type: 'doughnut',
+                data: {
+                    datasets: [{
+                        data: [50, 30, 20,10,10],
+                        backgroundColor: ['#f3545d', '#fdaf4b', '#1d7af3','#5beb34','#de2acf' ]
+                    }],
+
+                    labels: [
+                        'Duck Creek Claims',
+                        '.NET C# WEB API',
+                        'SQL',
+                        'Microsoft BizTalk Server',
+                        'HTML/CSS/JS'
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    legend: {
+                        position: 'bottom'
+                    },
+                    layout: {
+                        padding: {
+                            left: 20,
+                            right: 20,
+                            top: 20,
+                            bottom: 20
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!--The outer nav element with navbar as class creates the bar at the top of the page. A nav element is the same as a div except that we give a hint to seach engines that this is a navigation.-->
+        <div class="container">
+            <div class="navbar-collapse">
+                <a class="navbar-brand" href="#">
+                    <img src="../../logo.png" alt="..." height="65" width="65">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu">
+                    <span class="navbar-toggler-icon"></span>
+                    <!--The button element with the class navbar-toggler is the button on the mobile view to expand the menu. To test this make the browser window small.-->
+                </button>
+                <ul class="navbar-nav"  id="navbarMenu">
+                    <li><a class="nav-link" href="../../index.html" style="font-size: x-large;">Home</a></li>
+                    <li><a class="nav-link" href="../index.html" style="font-size: x-large;">Projects</a></li>
+                    <li><a class="nav-link active" href="./index.html" style="font-size: x-large;">Skills</a></li>
+                    <li><a class="nav-link" href="../Achievements/index.html" style="font-size: x-large;">Achievements</a></li>
+                </ul>
+            </div>
+            <div class="navbar-collapse w-100 order-3 dual-collapse2">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="mailto:prasadpawaskar786@gmail.com" style="border:0; text-decoration:none; outline:none">
+                            <img src="../../email.png" title="Mail me" height="30" width="30">&nbsp;&nbsp;
+                        </a>
+                        <a href="https://linkedin.com/in/prasad-pawaskar-651512a9" style="border:0; text-decoration:none; outline:none">
+                            <img src="../../linkedin.png" title="Connect With Me" height="30" width="30">&nbsp;&nbsp;
+                        </a>
+                        <!--www.linkedin.com/in/prasad-pawaskar-651512a9-->
+
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <br>
+        <h2 class="text-center">Skills overview</h2>
+        <h5 class="text-center">Here's what I know</h5>
+        <br>
+        <div class="row" style="border:none; background:white; height:350px;">
+        <div id="chart-container"  class="col-xs-4">
+            <canvas id="doughnutChart"></canvas>
+        </div>
+            <div style="width: 750px;" >
+                <table class="table table-hover table-responsive-xl">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Skill Name</th>
+                            <th scope="col">Category</th>
+                            <th scope="col">Level</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Duck Creek Claims</td>
+                            <td>Duck Creek Stack</td>
+                            <td>Proficient</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>ASP.NET</td>
+                            <td>.NET Framework</td>
+                            <td>Intermediate</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>C# and Web API</td>
+                            <td>.NET Framework</td>
+                            <td>Intermediate</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>SQL Server</td>
+                            <td>Back End DataBase</td>
+                            <td>Intermediate</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>HTML/CSS/JavaScript</td>
+                            <td>Front End Stack</td>
+                            <td>Begineer</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Python</td>
+                            <td>Coding</td>
+                            <td>Begineer</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>TFS / Azure GIT</td>
+                            <td>Repository</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>Waterfall / Agile</td>
+                            <td>Methodologies</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
