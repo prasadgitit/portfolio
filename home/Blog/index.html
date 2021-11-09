@@ -11,6 +11,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <style>
+    .flip-container {
+        background: transparent;
+        display: inline-block;
+    }
+
+    .flip-this {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+    }
+
+    .flip-container:hover .flip-this {
+        transition: 0.6s;
+        transform: rotateX(360deg);
+    }
+    
      .card:hover {
         box-shadow: 5px 8px 6px 2px #e9ecef;
         transform: scale(1.1)
@@ -34,9 +52,13 @@
         <!--The outer nav element with navbar as class creates the bar at the top of the page. A nav element is the same as a div except that we give a hint to seach engines that this is a navigation.-->
         <div class="container">
             <div class="navbar-collapse">
-                <a class="navbar-brand" href="#">
-                    <img src="../logo.png" alt="..." height="65" width="65">
-                </a>
+                <div class="flip-container">
+                    <div class="flip-this">
+                        <a class="navbar-brand" href="#">
+                            <img src="../logo.png" alt="..." height="65" width="65" class="custom">
+                        </a>
+                    </div>
+                </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu">
                     <span class="navbar-toggler-icon"></span>
                     <!--The button element with the class navbar-toggler is the button on the mobile view to expand the menu. To test this make the browser window small.-->
