@@ -38,9 +38,24 @@
         transition: all 0.2s ease;
         cursor: pointer
     }
+     .dark-mode {
+        background-color: black;
+        color: white;
+    }
+
+    .dark-box {
+        background-color: hsl(228, 28%, 20%);
+    }
     
 </style>
-
+<script>
+    function myFunction() {
+        const body = document.querySelector('body');
+        const cards = document.querySelectorAll('.card');
+        body.classList.toggle('dark-mode');
+        cards.forEach(card => card.classList.toggle('dark-box'));
+    }
+</script>
 <body>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
@@ -77,6 +92,8 @@
                         <a href="../Prasad_Pawaskar_Profile_v2.pdf" class="fa fa-download" height="35"
                         width="50px"  download="Prasad_Pawaskar_Profile" title="Download Resume"></a>&nbsp;&nbsp;
                         <!--www.linkedin.com/in/prasad-pawaskar-651512a9-->
+                        <a onclick="myFunction()" class="fa fa-moon-o" href="#" height="35" width="50px"
+                            title="Toggle Dark Mode"></a>&nbsp;&nbsp;
 
                     </li>
                 </ul>
