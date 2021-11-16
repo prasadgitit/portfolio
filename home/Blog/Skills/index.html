@@ -28,6 +28,14 @@
         transition: 0.6s;
         transform: rotateX(360deg);
     }
+    .dark-mode {
+        background-color: black;
+        color: white;
+    }
+    .dark-box {
+        background-color: hsl(228, 28%, 20%);
+        color: white;
+    }
 </style>
 <body>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
@@ -79,7 +87,12 @@
                 }
             });
         });
-        
+        function myFunction() {
+            const body = document.querySelector('body');
+            const cards = document.querySelectorAll('.btn');
+            body.classList.toggle('dark-mode');
+            cards.forEach(card => card.classList.toggle('dark-box'));
+        }
     </script>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <!--The outer nav element with navbar as class creates the bar at the top of the page. A nav element is the same as a div except that we give a hint to seach engines that this is a navigation.-->
@@ -114,6 +127,8 @@
                         <a href="../../Prasad_Pawaskar_Profile_v2.pdf" class="fa fa-download" height="35"
                         width="50px"  download="Prasad_Pawaskar_Profile" title="Download Resume"></a>&nbsp;&nbsp;
                         <!--www.linkedin.com/in/prasad-pawaskar-651512a9-->
+                        <a onclick="myFunction()" class="fa fa-moon-o" href="#" height="35" width="50px"
+                            title="Toggle Dark Mode"></a>&nbsp;&nbsp;
 
                     </li>
                 </ul>
