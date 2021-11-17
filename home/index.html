@@ -30,17 +30,23 @@
         transform: rotateX(360deg);
     }
         
-   .dark-mode {
-        background-color: black;
-        color: whitesmoke;
+    .dark-mode {
+        background-color: white;
+        color: black;
 
+    }
+        body {
+        background-color: black;
+        color: whitesmoke
     }
     
 </style>
 <script>
     function myFunction() {
-        var element = document.body;
-        element.classList.toggle("dark-mode");
+          const body = document.querySelector('body');
+        const nav = document.querySelector('nav');
+        nav.classList.toggle('dark-mode');
+        body.classList.toggle('dark-mode');
     }    
 </script>
 <body>
