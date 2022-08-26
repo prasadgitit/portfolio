@@ -115,8 +115,10 @@
 
     }
     body {
-        background-color: black;
-        color: whitesmoke
+        background-image:url(../../pexels-elle-hughes-5764081.jpg);
+        background-size:     cover;                      /* <------ */
+        background-repeat:   no-repeat;
+        background-position: center center; 
     }
 </style>
 <script>
@@ -130,7 +132,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
         <!--The outer nav element with navbar as class creates the bar at the top of the page. A nav element is the same as a div except that we give a hint to seach engines that this is a navigation.-->
         <div class="container">
             <div class="navbar-collapse">
@@ -146,11 +148,12 @@
                     <!--The button element with the class navbar-toggler is the button on the mobile view to expand the menu. To test this make the browser window small.-->
                 </button>
                 <ul class="navbar-nav" id="navbarMenu">
-                    <li><a class="nav-link" href="../../index.html" style="font-size: x-large;">Home</a></li>
-                    <li><a class="nav-link " href="../index.html" style="font-size: x-large;">Projects</a></li>
-                    <li><a class="nav-link" href="../Skills/index.html" style="font-size: x-large;">Skills</a></li>
+                    <li><a class="nav-link" href="../../index.html" style="font-size: x-large;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">Home</a></li>
+                    <li><a class="nav-link " href="../index.html" style="font-size: x-large;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">Projects</a></li>
+                    <li><a class="nav-link" href="../Skills/index.html" style="font-size: x-large;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">Skills</a></li>
                     <li><a class="nav-link active" href="./index.html" 
-                            style="font-size: x-large;">Achievements</a></li>
+                            style="font-size: x-large;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">Achievements</a></li>
+                            <li><a class="nav-link" href="../Quick Nuggets/" style="font-size: x-large;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">Quick&nbspNuggets</a></li>
                 </ul>
             </div>
             <div class="navbar-collapse w-100 order-3 dual-collapse2">
@@ -160,11 +163,11 @@
                             width="50px" title="Connect With Me"></a>&nbsp;&nbsp;
                         <a href="mailto:prasadpawaskar786@gmail.com" class="fa fa-envelope-o" height="35"
                         width="50px"  title="Contact Me"></a>&nbsp;&nbsp;
-                        <a href="../../Profile_Prasad.pdf" class="fa fa-download" height="35"
+                        <a href="../../Prasad_Pawaskar_Profile_v2.pdf" class="fa fa-download" height="35"
                         width="50px"  download="Prasad_Pawaskar_Profile" title="Download Resume"></a>&nbsp;&nbsp;
                         <!--www.linkedin.com/in/prasad-pawaskar-651512a9-->
-                        <a onclick="myFunction()" class="fa fa-moon-o" href="#" height="35" width="50px"
-                            title="Toggle Dark Mode"></a>&nbsp;&nbsp;
+                        <!-- <a onclick="myFunction()" class="fa fa-moon-o" href="#" height="35" width="50px"
+                            title="Toggle Dark Mode"></a>&nbsp;&nbsp; -->
 
                     </li>
                 </ul>
